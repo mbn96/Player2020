@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<stroke-->
+        <!--android:width="2dp"-->
+        <!--android:color="@android:color/white"-->
+        <!--android:dashGap="5dp"-->
+        <!--android:dashWidth="5dp" />-->
+    <corners android:radius="80px" />
+    <solid android:color="@color/mbn_background_for_appbar" />
+
+    <padding
+        android:bottom="5dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="5dp" />
+
+    <!--<gradient-->
+    <!--android:angle="90"-->
+    <!--android:endColor="#00000000"-->
+    <!--android:startColor="#feffed"-->
+    <!--android:centerColor="#00000000"-->
+    <!--android:type="linear"  android:useLevel="true"/>-->
+
+    <!--<solid android:color="#e9faff"/>-->
+
+</shape>

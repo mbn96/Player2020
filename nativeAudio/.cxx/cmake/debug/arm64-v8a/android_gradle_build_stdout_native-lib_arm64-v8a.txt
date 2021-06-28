@@ -1,0 +1,43 @@
+ninja: Entering directory `/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/.cxx/cmake/debug/arm64-v8a'
+[1/4] Building CXX object CMakeFiles/native-lib.dir/control.cpp.o
+In file included from /home/mreza/AndroidStudioProjects/Player2020/nativeAudio/src/native/control.cpp:2:
+In file included from /home/mreza/AndroidStudioProjects/Player2020/nativeAudio/src/native/audioEngine.h:6:
+/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/src/native/oscillator.h:15:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+typedef struct {
+              ^
+               audio_buff
+/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/src/native/oscillator.h:16:12: note: type is not C-compatible due to this default member initializer
+    int len{0}, read{0};
+           ^~~
+/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/src/native/oscillator.h:18:3: note: type is given name 'audio_buff' for linkage purposes by this typedef declaration
+} audio_buff;
+  ^
+1 warning generated.
+[2/4] Building CXX object CMakeFiles/native-lib.dir/oscillator.cpp.o
+In file included from /home/mreza/AndroidStudioProjects/Player2020/nativeAudio/src/native/oscillator.cpp:5:
+/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/src/native/oscillator.h:15:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+typedef struct {
+              ^
+               audio_buff
+/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/src/native/oscillator.h:16:12: note: type is not C-compatible due to this default member initializer
+    int len{0}, read{0};
+           ^~~
+/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/src/native/oscillator.h:18:3: note: type is given name 'audio_buff' for linkage purposes by this typedef declaration
+} audio_buff;
+  ^
+1 warning generated.
+[3/4] Building CXX object CMakeFiles/native-lib.dir/audioEngine.cpp.o
+In file included from /home/mreza/AndroidStudioProjects/Player2020/nativeAudio/src/native/audioEngine.cpp:5:
+In file included from /home/mreza/AndroidStudioProjects/Player2020/nativeAudio/src/native/audioEngine.h:6:
+/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/src/native/oscillator.h:15:15: warning: anonymous non-C-compatible type given name for linkage purposes by typedef declaration; add a tag name here [-Wnon-c-typedef-for-linkage]
+typedef struct {
+              ^
+               audio_buff
+/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/src/native/oscillator.h:16:12: note: type is not C-compatible due to this default member initializer
+    int len{0}, read{0};
+           ^~~
+/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/src/native/oscillator.h:18:3: note: type is given name 'audio_buff' for linkage purposes by this typedef declaration
+} audio_buff;
+  ^
+1 warning generated.
+[4/4] Linking CXX shared library /home/mreza/AndroidStudioProjects/Player2020/nativeAudio/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so

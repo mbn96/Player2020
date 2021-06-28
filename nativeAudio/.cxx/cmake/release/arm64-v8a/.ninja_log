@@ -1,0 +1,5 @@
+# ninja log v5
+1	805	1624872540	CMakeFiles/native-lib.dir/control.cpp.o	70bbcb4e0f114bac
+1	822	1624872540	CMakeFiles/native-lib.dir/audioEngine.cpp.o	8956bbcf6ee82bd7
+1	906	1624872540	CMakeFiles/native-lib.dir/oscillator.cpp.o	1f4b438728474c79
+906	931	1624872540	/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/build/intermediates/cmake/release/obj/arm64-v8a/libnative-lib.so	d236ef831b28cf59

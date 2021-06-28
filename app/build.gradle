@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+
+        player {
+            keyAlias 'musicplayer'
+            keyPassword 'funkuMusicIdiot9919'
+            storeFile file('/home/mreza/AndroidStudioProjects/ANDRKeys/AndroidKeys2.jks')
+            storePassword '123Mreza9619'
+        }
+    }
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.br.mreza.mbnplayer"
+        minSdkVersion 29
+        targetSdkVersion 30
+        versionCode 2
+        versionName '2.4.2'
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.player
+            applicationIdSuffix '.release'
+            versionNameSuffix '_release'
+        }
+    }
+    productFlavors {
+    }
+
+//    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_1_8
+//        targetCompatibility JavaVersion.VERSION_1_8
+//    }
+    buildToolsVersion = '30.0.3'
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    ndkVersion '22.1.7171670'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(path: ':nativeAudio')
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.3.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'androidx.lifecycle:lifecycle-runtime:2.2.0'
+    annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-common-java8:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    testImplementation 'androidx.arch.core:core-testing:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-reactivestreams:2.2.0'
+    implementation 'androidx.room:room-runtime:2.2.5'
+    annotationProcessor 'androidx.room:room-compiler:2.2.5'
+    testImplementation 'androidx.room:room-testing:2.2.5'
+    //    implementation "android.arch.persistence.room:rxjava2:1.0.0"
+    implementation 'androidx.paging:paging-runtime:2.1.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.palette:palette:1.0.0'
+    //    compile 'io.github.rockerhieu:emojiconize:1.0.0'
+    testImplementation 'junit:junit:4.13.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
+    implementation 'com.github.alxrm:audiowave-progressbar:0.9.2'
+//    implementation 'com.arthenica:mobile-ffmpeg-full:4.3.2'
+    implementation project(path: ':mbnlibs')
+}

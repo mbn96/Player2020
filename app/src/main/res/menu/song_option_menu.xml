@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/song_share"
+        android:icon="@drawable/ic_menu_share"
+        android:title="Share" />
+    <item
+        android:id="@+id/add_to_playlist"
+        android:icon="@drawable/ic_playlist_add_black_24dp"
+        android:title="Add to a playlist" />
+
+    <group android:id="@+id/pl_next_gr">
+        <item
+            android:id="@+id/play_next"
+            android:icon="@drawable/ic_play_circle_filled_black_24dp"
+            android:title="Play next" />
+    </group>
+
+    <group android:id="@+id/a_b_gr">
+        <item
+            android:id="@+id/a_b_active"
+            android:icon="@drawable/ic_all_inclusive_black_24dp"
+            android:title="Activate A B"
+            app:showAsAction="always" />
+    </group>
+
+    <item
+        android:id="@+id/cutter_song_option"
+        android:icon="@drawable/ic_content_cut_black_24dp"
+        android:title="MP3 Cutter" />
+
+    <item
+        android:id="@+id/search_google"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search for lyrics" />
+</menu>

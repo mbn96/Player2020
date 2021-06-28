@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/cross_line"
+    android:elevation="5dp"
+    android:gravity="end"
+    android:orientation="vertical">
+
+    <com.br.mreza.musicplayer.MBN.customViews.RoundEdgeImageView
+        android:id="@+id/first_list_art_cover"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:transitionName="img_art_trans"
+        app:srcCompat="@drawable/night_rain_1" />
+
+    <TextView
+        android:id="@+id/first_list_album_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Revival"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/album_list_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_color">#E1F5FE</color>
+    <color name="accent_color">#0288D1</color>
+    <color name="accent_color_dark">#003968</color>
+    <!--Themes values-->
+
+    <color name="theme_light_background">#E1F5FE</color>
+    <color name="theme_light_background_trans_white">#E6FFFFFF</color>
+    <color name="theme_light_background_transparent">#E6E1F5FE</color>
+    <color name="theme_light_text_context">#666666</color>
+    <color name="white_alpha_60">#96FFFFFF</color>
+</resources>

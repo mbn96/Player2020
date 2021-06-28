@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomViews">
+        <attr name="accentColor" format="color" />
+        <attr name="rippleColor" format="color" />
+        <attr name="style" format="enum">
+            <enum name="light" value="0" />
+            <enum name="dark" value="1" />
+        </attr>
+        <attr name="progressBarMode" format="enum">
+            <enum name="loading" value="0" />
+            <enum name="progressBar" value="1" />
+            <enum name="seekBar" value="2" />
+        </attr>
+        <attr name="check" format="boolean" />
+    </declare-styleable>
+</resources>

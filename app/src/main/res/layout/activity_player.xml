@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context="com.br.mreza.musicplayer.PlayerActivity">
+
+
+    <ImageView
+        android:id="@+id/albumArt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/liny"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:background="#32000000"
+        android:elevation="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/songTitle">
+
+
+        <ImageButton
+            android:id="@+id/pre_songBton"
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+
+            android:onClick="btonFuncs"
+            android:scaleType="fitCenter"
+            android:tag="pre"
+            android:text="\u25c0\u25c0"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            app:srcCompat="@android:drawable/ic_media_rew" />
+
+        <ImageButton
+            android:id="@+id/pauseBton"
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="btonFuncs"
+            android:scaleType="fitCenter"
+            android:tag="pause"
+            android:text="\u275a\u275a"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:srcCompat="@android:drawable/ic_media_pause" />
+
+        <ImageButton
+            android:id="@+id/playBton"
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="btonFuncs"
+            android:scaleType="fitCenter"
+            android:tag="play"
+            android:text="\u25b6"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            app:srcCompat="@android:drawable/ic_media_play" />
+
+        <ImageButton
+            android:id="@+id/nextSongBton"
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="btonFuncs"
+            android:scaleType="fitCenter"
+            android:tag="next"
+            android:text="\u25b6\u25b6"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            app:srcCompat="@android:drawable/ic_media_ff" />
+
+
+    </LinearLayout>
+
+
+    <com.br.mreza.musicplayer.MBN.customViews.MbnCircularSeekBar
+        android:id="@+id/seekBarCircule"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/timeTextView"
+        android:transitionName="img_art_trans"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="5"
+        android:text="2:35"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/albumTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarCircule" />
+
+
+    <TextView
+        android:id="@+id/songTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:elevation="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="10"
+        android:text="Amor mia"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/liny"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/albumTitle"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/albumTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="15"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/songTitle"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeTextView"
+        android:layout_marginBottom="8dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

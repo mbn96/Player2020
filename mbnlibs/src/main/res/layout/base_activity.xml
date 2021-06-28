@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mbn.libs.fragmanager.CustomFragmentSwipeBackAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/back_of_all_app"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scaleType="centerCrop" />-->
+
+    <!--<mbn.libs.fragmanager.CustomFragmentSwipeBackAnimator-->
+        <!--android:id="@+id/base_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="24dp"-->
+    <!--android:background="@drawable/status_back_light"/>-->
+
+</mbn.libs.fragmanager.CustomFragmentSwipeBackAnimator>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="onPlayerPageDialogList">
+        <item>Share</item>
+        <item>Add to playlist</item>
+        <item>Search Google…</item>
+    </string-array>
+
+    <string-array name="shareMenuListArray">
+        <item>Song</item>
+        <item>Album art</item>
+        <item>Name</item>
+    </string-array>
+
+
+</resources>

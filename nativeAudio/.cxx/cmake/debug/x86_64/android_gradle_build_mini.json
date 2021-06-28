@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/src/native/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/home/mreza/Android/Sdk/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/.cxx/cmake/debug/x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/home/mreza/Android/Sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/.cxx/cmake/debug/x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "native-lib-Debug-x86_64": {
+      "artifactName": "native-lib",
+      "buildCommandComponents": [
+        "/home/mreza/Android/Sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/.cxx/cmake/debug/x86_64",
+        "native-lib"
+      ],
+      "abi": "x86_64",
+      "output": "/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/build/intermediates/cmake/debug/obj/x86_64/libnative-lib.so",
+      "runtimeFiles": []
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorPrimary2">#344558</color>
+    <color name="colorAccent">#FF3191</color>
+    <color name="semi_trans">#82000000</color>
+    <color name="mbn_primary_color">#9bfff3</color>
+    <color name="bottom_playing_color">#fffaf1</color>
+    <color name="first_album_text_back">#dcffffff</color>
+    <color name="player_back_color">#82414141</color>
+    <color name="white_tranparent">#c8ffffff</color>
+    <color name="mbn_background_for_appbar">#50F5F5F5</color>
+    <color name="mbn_background_for_appbar_middle">#87ffffff</color>
+    <color name="mbn_background_for_appbar_low">#6effffff</color>
+    <color name="mbn_background_for_appbar_light">#96ffffff</color>
+    <color name="mbn_background_for_appbar_light_with_tint">#96bafff9</color>
+    <color name="mbn_background_for_appbar_super_light">#a7ffffff</color>
+    <color name="mbn_background_for_appbar_super_ultra_light">#d2ffffff</color>
+    <color name="mbn_background_for_appbar_super_ultra_light_backup">#beffffff</color>
+    <color name="mbn_background_for_fast_scroll">#f5f5f5</color>
+    <color name="_mbn_background_for_whole_page">#c8bebebe</color>
+    <color name="mbn_background_for_drawer">#32ffffff</color>
+    <color name="for_chooser_activity">#646e6e6e</color>
+    <color name="notification_text_color">#646464</color>
+    <color name="mbn_dark_grey_for_button">#505050</color>
+    <color name="test_col">#00b4ff</color>
+    <color name="almost_white">#F4F4F4</color>
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="1dp"
+        android:gravity="center_vertical|bottom"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/playlist_name_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingBottom="10dp"
+            android:text="TextView"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/add_to_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/new_ripple_2"
+            android:padding="12dp"
+            app:srcCompat="@drawable/ic_playlist_add_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/cancel_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/new_ripple_2"
+            android:padding="12dp"
+            app:srcCompat="@drawable/ic_cancel" />
+
+        <ImageButton
+            android:id="@+id/play_list_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/new_ripple_2"
+            android:padding="12dp"
+            app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

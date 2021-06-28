@@ -1,0 +1,7 @@
+Executable : /home/mreza/Android/Sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/.cxx/cmake/debug/arm64-v8a
+native-lib
+jvmArgs : 
+

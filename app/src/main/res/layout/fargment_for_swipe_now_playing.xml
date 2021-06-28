@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/player_frag_always_show_linear_test"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@android:color/transparent"
+    android:elevation="8dp"
+    android:gravity="start"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/player_frag_album_art"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/circle_for_image_back"
+        android:scaleType="centerCrop"
+        android:transitionName="img_art_trans" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/imageView2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_weight="0.7"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--app:srcCompat="@mipmap/ic_action_move_remote_layout" />-->
+
+
+        <com.br.mreza.musicplayer.MBN.customViews.MbnScrollingTextView
+            android:id="@+id/player_frag_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fadingEdgeLength="8dp"
+            android:fontFamily="@font/concert_one"
+            android:gravity="center_vertical"
+            android:requiresFadingEdge="horizontal"
+            android:text="Now Playing..."
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/player_frag_artist_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:fontFamily="@font/pt_sans_narrow"
+            android:gravity="center"
+            android:text="Selena Gomes"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/player_frag_go_top_button"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:tint="@color/notification_text_color"
+        app:srcCompat="@drawable/ic_keyboard_arrow_up_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/player_frag_find_button"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:tint="@color/notification_text_color"
+        app:srcCompat="@drawable/ic_my_location_black_24dp" />
+
+
+    <ImageButton
+        android:id="@+id/player_frag_option_button"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:tint="@color/notification_text_color"
+        app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+
+    <!--<com.br.mreza.musicplayer.MBN.customViews.MbnImageButtonChangeIcon-->
+    <!--android:id="@+id/player_frag_top_play_button"-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:src="@drawable/ic_music_player_play"-->
+    <!--android:tint="@color/mbn_dark_grey_for_button" />-->
+
+</LinearLayout>

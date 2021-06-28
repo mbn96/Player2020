@@ -1,0 +1,3 @@
+/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/.cxx/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/.cxx/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/mreza/AndroidStudioProjects/Player2020/nativeAudio/.cxx/cmake/release/armeabi-v7a/CMakeFiles/native-lib.dir

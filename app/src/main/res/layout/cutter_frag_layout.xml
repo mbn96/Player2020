@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Music Cutter"
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/cutter_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Not Today"
+        android:textColor="@color/test_col"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+
+        <TextView
+            android:id="@+id/cutter_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="00:32"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cutter_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="00:52"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cutter_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="01:15"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <com.br.mreza.musicplayer.cutter.ui.DoubleThumbSeekBar
+        android:id="@+id/cutter_seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center">
+
+
+        <ImageButton
+            android:id="@+id/cutter_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/ic_pause_circle_filled_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/cutter_cut"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ripple_button"
+            android:backgroundTint="@color/test_col"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:tint="@android:color/background_light"
+            app:srcCompat="@drawable/ic_content_cut_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/cutter_play"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:tint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_play_circle_filled_black_24dp" />
+    </LinearLayout>
+
+    <com.br.mreza.musicplayer.newdesign.customviews.DotProgressBar
+        android:id="@+id/cutter_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_margin="16dp"
+        android:max="100"
+        android:progress="30"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/cutter_prog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="25%"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Setting" />
+        <item
+            android:id="@+id/nav_timer"
+            android:icon="@drawable/ic_timer_black_24dp"
+            android:title="Timer" />
+        <item
+            android:id="@+id/nav_equ"
+            android:icon="@drawable/ic_equalizer_black_24dp"
+            android:title="Equalizer" />
+        <item
+            android:id="@+id/nav_cutter"
+            android:icon="@drawable/ic_content_cut_black_24dp"
+            android:title="Music cut" />
+        <item
+            android:id="@+id/nav_playlist"
+            android:icon="@drawable/ic_queue_music_black_24dp"
+            android:title="PlayLists" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_share"-->
+    <!--android:icon="@drawable/ic_menu_share"-->
+    <!--android:title="Share" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_send"-->
+    <!--android:icon="@drawable/ic_menu_send"-->
+    <!--android:title="Send" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>

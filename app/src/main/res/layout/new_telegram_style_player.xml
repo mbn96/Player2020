@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.br.mreza.musicplayer.newdesign.BackgroundFullScreenImageView
+    android:id="@+id/player_back_cover"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="top"-->
+        <!--android:background="@color/colorPrimary" />-->
+
+
+    <include layout="@layout/player_fragment_new_design" />
+
+    <com.br.mreza.musicplayer.newdesign.materialtheme.PlayerPageViewPager
+        android:id="@+id/player_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_gravity="top"
+        android:background="@drawable/status_back" />
+
+
+
+</FrameLayout>

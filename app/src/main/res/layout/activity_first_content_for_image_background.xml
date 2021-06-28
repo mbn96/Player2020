@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.br.mreza.musicplayer.FirstActivity">
+
+
+    <ImageView
+        android:id="@+id/back_of_all_app"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="back"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/bottom_playing_color" />
+
+    <ProgressBar
+        android:id="@+id/first_page_load_indicator"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@android:color/holo_blue_bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <!--<include-->
+        <!--android:id="@+id/incle"-->
+        <!--layout="@layout/layout_first_player_and_lists"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <include
+        android:id="@+id/incle"
+        layout="@layout/first_page_complete_new_design_based_on_bottomsheet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:orientation="vertical"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent">-->
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/now_paying_bottom_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="8"-->
+    <!--android:background="@color/bottom_playing_color"-->
+    <!--android:elevation="9dp"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:padding="16dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/now_playing_title_tv"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="643dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:fontFamily="sans-serif-condensed"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="Now Playing"-->
+    <!--android:textSize="20sp"-->
+    <!--tools:layout_editor_absoluteX="-604dp"-->
+    <!--tools:layout_editor_absoluteY="-287dp" />-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/now_playing_preBton"-->
+    <!--style="@style/Widget.AppCompat.Button.Borderless"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+    <!--android:scaleType="fitCenter"-->
+    <!--app:srcCompat="@drawable/ic_previous" />-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/now_playing_playBton"-->
+    <!--style="@style/Widget.AppCompat.Button.Borderless"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+    <!--android:scaleType="fitCenter"-->
+    <!--app:srcCompat="@drawable/ic_play_button" />-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/now_playing_nextBton"-->
+    <!--style="@style/Widget.AppCompat.Button.Borderless"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="end"-->
+    <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+    <!--android:scaleType="fitCenter"-->
+    <!--app:srcCompat="@drawable/ic_skip" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

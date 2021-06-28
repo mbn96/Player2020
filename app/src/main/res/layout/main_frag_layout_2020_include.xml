@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/albums_recyclr_v"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:itemCount="1"
+        tools:listitem="@layout/album_list_item_layout_2020" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recnt_add_recyclr_v"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:itemCount="1"
+        tools:listitem="@layout/album_list_item_layout_2020" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/most_ply_recyclr_v"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:itemCount="1"
+        tools:listitem="@layout/album_list_item_layout_2020" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="0dp"
+        android:scrollbarStyle="outsideInset">
+
+        <LinearLayout
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <mbn.libs.utils.views.NeonButton
+                android:id="@+id/all_sng_b"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Songs"
+                android:textAppearance="@style/Text_Title"
+                app:accentColor="@color/accent_color"
+                app:rippleColor="@color/accent_color" />
+
+            <mbn.libs.utils.views.NeonButton
+                android:id="@+id/recnt_ply_b"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recently Played"
+                android:textAppearance="@style/Text_Title"
+                app:accentColor="@color/accent_color"
+                app:rippleColor="@color/accent_color" />
+
+            <mbn.libs.utils.views.NeonButton
+                android:id="@+id/artst_b"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Artists"
+                android:textAppearance="@style/Text_Title"
+                app:accentColor="@color/accent_color"
+                app:rippleColor="@color/accent_color" />
+
+            <mbn.libs.utils.views.NeonButton
+                android:id="@+id/ply_list_b"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play Lists"
+                android:textAppearance="@style/Text_Title"
+                app:accentColor="@color/accent_color"
+                app:rippleColor="@color/accent_color" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

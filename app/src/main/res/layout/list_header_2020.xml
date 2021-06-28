@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/list_item_main_2020_width"
+    android:layout_height="@dimen/list_item_main_2020_width"
+    android:layout_margin="10dp"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/header_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shader3"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/blurred_1_10" />
+
+    <TextView
+        android:id="@+id/header_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Albums hey here"
+        android:textAppearance="@style/Text_Title"
+        android:textColor="@color/accent_color"
+        android:textSize="15sp" />
+</FrameLayout>

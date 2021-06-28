@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Player2020.iml" filepath="$PROJECT_DIR$/.idea/modules/Player2020.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Player2020.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Player2020.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mbnfragmentmanager/Player2020.mbnfragmentmanager.iml" filepath="$PROJECT_DIR$/.idea/modules/mbnfragmentmanager/Player2020.mbnfragmentmanager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mbnlibs/Player2020.mbnlibs.iml" filepath="$PROJECT_DIR$/.idea/modules/mbnlibs/Player2020.mbnlibs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nativeAudio/Player2020.nativeAudio.iml" filepath="$PROJECT_DIR$/.idea/modules/nativeAudio/Player2020.nativeAudio.iml" />
+    </modules>
+  </component>
+</project>

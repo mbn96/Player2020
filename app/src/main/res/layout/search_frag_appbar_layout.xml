@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="cursive"
+        android:gravity="bottom|center"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:text="Search"
+        app:autoSizeMinTextSize="20sp"
+        app:autoSizeTextType="uniform" />
+
+    <EditText
+        android:id="@+id/search_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/shader_for_a_b_butt"
+        android:ems="10"
+        android:hint="Search songs , albums , artists ..."
+        android:inputType="textAutoCorrect"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textAppearance="@style/Text_context" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/search_frag_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/test_col"
+        app:tabSelectedTextColor="@color/test_col"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat" />
+
+</LinearLayout>

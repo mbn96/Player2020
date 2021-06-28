@@ -1,0 +1,95 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--<item name="android:colorControlHighlight">#cecece</item>-->
+        <item name="android:colorControlHighlight">@color/colorAccent</item>
+
+
+        <item name="android:windowActivityTransitions">true</item>
+
+        <item name="android:windowEnterTransition">@transition/test_one</item>
+
+        <item name="android:windowExitTransition">@transition/test_one</item>
+
+        <item name="android:windowSharedElementEnterTransition">@transition/two</item>
+
+
+        <item name="android:windowSharedElementExitTransition">@transition/two</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.AppTheme.DayNight" parent="Theme.AppCompat.DayNight">
+        <item name="android:statusBarColor">@color/primary_material_light</item>
+    </style>
+
+    <style name="newTheme" parent="Theme.AppTheme.DayNight">
+
+        <!--<item name="android:windowLightStatusBar">true</item>-->
+        <item name="windowActionBar">false</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+
+        <item name="android:windowActivityTransitions">true</item>
+
+        <item name="android:windowEnterTransition">@transition/test_one</item>
+
+        <item name="android:windowExitTransition">@transition/test_one</item>
+        <item name="android:windowSharedElementEnterTransition">@transition/two</item>
+
+
+        <item name="android:windowSharedElementExitTransition">@transition/two</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="newTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="newTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="testButtons" parent="Widget.AppCompat.ImageButton">
+
+
+    </style>
+
+
+    <style name="TabTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="Text_Title" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/concert_one</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="Text_context" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/pt_sans_narrow</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/theme_light_text_context</item>
+    </style>
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <include
+            layout="@layout/main_frag_layout_2020_include"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/now_playing_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="30dp">
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:scaleType="center"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/ic_keyboard_arrow_up_black_24dp" />
+
+            <com.br.mreza.musicplayer.MBN.customViews.MbnScrollingTextView
+                android:id="@+id/now_playing_new_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:fadingEdgeLength="8dp"
+                android:requiresFadingEdge="horizontal"
+                android:text="Now Playing..."
+                android:textAppearance="@style/Text_context"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <com.br.mreza.musicplayer.MBN.customViews.MbnPlayButton
+                android:id="@+id/main_frag_play_button"
+                android:layout_width="55dp"
+                android:layout_height="55dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/main_frag_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="31dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="01:25"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+
+        <com.br.mreza.musicplayer.p2020.views.VisualizerProgressBar
+            android:id="@+id/main_frag_prog_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="1dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

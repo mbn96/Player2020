@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/overlay_layout_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:background="@drawable/shader_album_title_back"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/overlay_move_bar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/ic_action_move_remote_layout" />
+
+    <ImageView
+        android:id="@+id/overlay_previous"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_previous" />
+
+    <ImageView
+        android:id="@+id/overlay_play_pause"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_play" />
+
+    <ImageView
+        android:id="@+id/overlay_next"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_skip" />
+</LinearLayout>

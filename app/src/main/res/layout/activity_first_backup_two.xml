@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:id="@+id/appbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@android:color/white"-->
+        <!--android:paddingTop="20dp"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<mbn.packfragmentmanager.fragmanager.MbnUpPageButton-->
+                <!--android:id="@+id/drawer_toggle"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="?attr/selectableItemBackgroundBorderless" />-->
+
+            <!--&lt;!&ndash;<ImageButton&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="30dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="30dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@android:color/transparent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:scaleType="fitCenter"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:srcCompat="@mipmap/ic_action_move_remote_layout" />&ndash;&gt;-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/textView5"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="40dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:fontFamily="cursive"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Dr.Music"-->
+                <!--android:textColor="@color/colorPrimary2"-->
+                <!--android:textSize="45sp" />-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/main_frag_search_Butt"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+                <!--android:src="@drawable/ic_search_black_24dp" />-->
+
+            <!--<ImageButton-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+                <!--android:src="@drawable/ic_more_vert_black_24dp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:visibility="gone"-->
+            <!--app:layout_scrollFlags="scroll|enterAlways"-->
+            <!--app:popupTheme="@style/Theme.AppCompat.Light"-->
+            <!--app:titleTextColor="@color/bottom_playing_color" />-->
+
+        <!--<android.support.design.widget.TabLayout-->
+            <!--android:id="@+id/tabs"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:tabIndicatorColor="@color/colorPrimaryDark"-->
+            <!--app:tabSelectedTextColor="@color/colorAccent"-->
+            <!--app:tabTextAppearance="@style/TabTextStyle"-->
+            <!--app:tabTextColor="@color/colorPrimary2" />-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/almost_white">
+
+
+            <LinearLayout
+                android:id="@+id/now_playing_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_up_black_24dp" />
+
+                <com.br.mreza.musicplayer.MBN.customViews.MbnScrollingTextView
+                    android:id="@+id/now_playing_new_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:fadingEdgeLength="8dp"
+                    android:requiresFadingEdge="horizontal"
+                    android:text="Now Playing..."
+                    android:textSize="18sp" />
+
+                <com.br.mreza.musicplayer.MBN.customViews.MbnPlayButton
+                    android:id="@+id/main_frag_play_button"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/main_frag_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="3dp"
+                android:text="01:25"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="10sp" />
+
+            <com.br.mreza.musicplayer.newdesign.customviews.DotProgressBar
+                android:id="@+id/main_frag_prog_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="1dp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/container"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:orientation="vertical">-->
+
+    <!---->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:background="@color/colorAccent"-->
+    <!--android:layout_weight="0.2">-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>

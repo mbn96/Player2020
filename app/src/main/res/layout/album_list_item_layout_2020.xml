@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/list_item_main_2020_width"
+    android:layout_height="@dimen/list_item_main_2020_height"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <com.br.mreza.musicplayer.p2020.views.SquareImageView
+        android:id="@+id/item_pic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_main_2020_width"
+        android:background="@drawable/shader3"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/text_view_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:padding="3dp"
+        android:textAppearance="@style/Text_context" />
+</LinearLayout>
