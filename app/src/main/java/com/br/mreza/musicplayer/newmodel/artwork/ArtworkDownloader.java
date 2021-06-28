@@ -169,7 +169,7 @@ public class ArtworkDownloader extends MultiThreadSequentialTasks<Long, int[]> {
             previousRequest = System.currentTimeMillis();
         }
         String response = IO_Utils.getTextResponse(IO_Utils.makeURL(BASE_URL,
-                new IO_Utils.UrlPart[]{KEY_PART, SECRET_PART, PER_PAGE_PART, PAGE_PART, new IO_Utils.UrlPart("query", query)}),
+                KEY_PART, SECRET_PART, PER_PAGE_PART, PAGE_PART, new IO_Utils.UrlPart("query", query)),
                 null);
         if (response == null || response.isEmpty()) {
             result[0] = RESULT_RETRY;
