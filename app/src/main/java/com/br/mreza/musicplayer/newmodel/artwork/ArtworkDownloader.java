@@ -166,10 +166,10 @@ public class ArtworkDownloader extends MultiThreadSequentialTasks<Long, int[]> {
         }
         synchronized (LOCK) {
 //            while (System.currentTimeMillis() - previousRequest < 1000) ;
-            long slp_time = System.currentTimeMillis() - previousRequest;
-            if (slp_time < 1000) {
+            long slp_time = 1000 - (System.currentTimeMillis() - previousRequest);
+            if (slp_time > 0) {
                 try {
-                    Thread.sleep(1000 - slp_time);
+                    Thread.sleep(slp_time);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
