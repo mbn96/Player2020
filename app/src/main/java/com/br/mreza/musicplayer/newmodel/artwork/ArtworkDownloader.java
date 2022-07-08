@@ -165,7 +165,15 @@ public class ArtworkDownloader extends MultiThreadSequentialTasks<Long, int[]> {
             query += (" " + song.getArtistTitle());
         }
         synchronized (LOCK) {
-            while (System.currentTimeMillis() - previousRequest < 1000) ;
+//            while (System.currentTimeMillis() - previousRequest < 1000) ;
+            long slp_time = 1000 - (System.currentTimeMillis() - previousRequest);
+            if (slp_time > 0) {
+                try {
+                    Thread.sleep(slp_time);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
             previousRequest = System.currentTimeMillis();
         }
         String response = IO_Utils.getTextResponse(IO_Utils.makeURL(BASE_URL,
